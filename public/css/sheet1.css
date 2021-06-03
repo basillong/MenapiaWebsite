@@ -1,0 +1,403 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Oct-2020, 17:19:16
+    Author     : Menapia Software Ltd <Basil Long at basil@menapiasoftware.ie>
+*/
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+ /* padding: 20px;*/
+  text-align: center;
+  
+ overflow: hidden;
+}
+
+
+body {
+  margin: 0;
+  overflow: auto;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+
+
+
+
+ul.nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li.nav_item {
+  float: left;
+}
+
+li.nav_item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav_item a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+
+
+.homeColumn {
+   
+  margin: auto;
+  width: 50%;
+  padding: 5%;
+    
+}
+
+.mySlides {display:none;}
+
+
+.slide_animate-right{
+    position:relative;
+    animation:animateright 10.0s;
+    
+}
+@keyframes animateright{
+    from{right:-100%;opacity:0.1} 
+    25% {
+        right:0;opacity:1
+    }
+    
+    75% {
+        right:0;opacity:1
+    }
+    to{left:-100;opacity:0}
+}
+
+
+
+.slide_fade_in{
+    position:relative;
+    animation:animateFadeIn 10.0s;
+    
+}
+@keyframes animateFadeIn{
+    from{opacity:0.0} 
+    50% {
+        right:0;opacity:1
+    }
+    
+    85% {
+        right:0;opacity:1
+    }
+    to{opacity:0.0}
+}
+
+
+
+
+
+
+
+
+.slide_animate-left{
+    position:relative;
+    animation:animateleft 5.0s
+                
+}
+@keyframes animateleft{
+    from{left:-100%;opacity:0.1} 
+    to{left:0;opacity:1}
+}
+
+.slide-animate-top{
+    position:relative;
+    animation:animatetop 5.0s
+}
+@keyframes animatetop{
+    from{top:-100%;opacity:0.1} 
+    to{top:0;opacity:1}
+}
+
+.slide-animate-bottom{
+    position:relative;
+    animation:animatebottom 5.0s
+}
+@keyframes animatebottom{
+    from{bottom:-100%;opacity:0.1} 
+    to{bottom:0;opacity:1}
+}
+
+
+/*
+@keyframes animateleft{
+    from{left:-300px;opacity:0} 
+    to{left:0;opacity:1}
+}
+*/
+
+/* Create four equal columns that floats next to each other */
+.servicesColumn {
+ 
+  float: left;
+  width: 25%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.servicesRow:after {
+  
+  /*grid-auto-rows: 1fr;*/
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.contactColumnLeft {
+ 
+  float: left;
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  
+  
+}
+
+/* Create four equal columns that floats next to each other */
+.contactColumnRight {
+ 
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 100%;
+  
+}
+
+/* Clear floats after the columns */
+.contactRow:after {
+  
+  /*grid-auto-rows: 1fr;*/
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.careersColumn {
+ 
+  margin: auto;
+
+  width: 80%;
+  padding: 10px;
+  
+  
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1800px) {
+  .servicesColumn  {
+    width: 50%;
+    min-height: 270px;   
+  }
+
+  
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+
+  .homeColumn {
+    width: 60%;
+    
+  }
+  
+}
+
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:700px) {
+  .servicesColumn {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+      
+  }
+  
+  .contactColumnLeft {
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+  }
+
+  .contactColumnRight {
+    width: 100%;
+    min-height: 100px;  
+    height: 100%;
+   
+  }   
+  
+   .homeColumn {
+    width: 90%;
+    
+  }
+
+}
+
+
+
+
+
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  
+  /* Keep the footer pinned to the bottom of the screen */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+    
+  
+}
+
+
+#footLeft {
+    
+
+    float: left;
+    padding-left: 30px;
+    
+    
+}
+
+#footRight {
+    
+    float: right;
+    padding-right: 30px;
+    
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=button] {
+  float: right;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+input[type=submit] {
+  float: right;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+.messageContainer {
+  border-radius: 20px;
+  /*background-color: #f2f2f2;*/
+  background-color: #ddd;
+  /*margin: 20px;*/
+  padding: 20px;
+}
+
+
+/* Used to highlight input elements that require attention.*/
+.focusError {
+    
+    background-color: lightpink;
+}
