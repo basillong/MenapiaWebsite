@@ -18,6 +18,13 @@
 </script>
 
 <!-- Write your comments here -->
+<!-- Write your comments here -->
+<!-- Write your comments here -->
+<!-- Write your comments here -->
+<!-- Write your comments here -->
+<!-- Write your comments here -->
+<!-- Write your comments here -->
+<!-- testing the GIT bash termial out to fix our issue -->
     
 <div class="contactRow">
 
