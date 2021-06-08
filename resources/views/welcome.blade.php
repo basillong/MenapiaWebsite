@@ -12,7 +12,10 @@
 <!-- Include Jquery noty plugin -->
 <script src="{!! asset('js/jquery/plugins/noty/packaged/jquery.noty.packaged.min.js') !!}" ></script>  
     
+<!-- Include the style sheet -->
 <link href="{!! asset('css/sheet1.css?') !!}{{ time() }}" rel='stylesheet' type='text/css'>
+
+<!-- Include the Menapia JS file -->
 <script src="{!! asset('js/msl.js') !!}?{{ time() }}" type="text/javascript"></script>
 
 
