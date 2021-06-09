@@ -41,7 +41,7 @@
             <input type="tel" id="yourPhone" name="yourPhone" placeholder="Your phone number..">                
 
             <label for="yourMessage">Message</label>
-            <textarea id="yourMessage" name="yourMessage" placeholder="Write something.." style="height:120px"></textarea>
+            <textarea id="yourMessage" name="yourMessage" placeholder="Write something here.." style="height:120px"></textarea>
 
             <div class="g-recaptcha" data-sitekey="6Lc0G-0ZAAAAAHDIPiI75pyHD7x7c9kZXhb0yFm-" data-theme="dark" style="width: 80%; float: left"></div>
             <input type="button" value="Send" onclick="sendMessage()">
@@ -66,10 +66,9 @@
                     <td>&nbsp;</td>
                     <td>
                         Menapia Software Ltd<br />
-                            White Mill Rd<br />
-                            Killeens<br />
-                            Wexford<br />
-                            Y35 N232<br />
+                        14 NORTH MAIN STREET<br />
+                        Wexford<br />
+                        Y35 KFV3<br />
                         
                     </td>
                 </tr>
